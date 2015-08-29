@@ -1,4 +1,4 @@
-# Adblock Tester
+# gem::amiblocked
 
 Checks to see if your service is on any of the lists on the [easylist](https://easylist.adblockplus.org/en/).
 
