@@ -5,9 +5,9 @@ Checks to see if your service is on any of the lists on the [easylist](https://e
 ## Usage
 
 ```ruby
-ruby tester.rb service_name
+gem install amiblocked
 
 # Examples
-# ruby tester.rb google
-# ruby tester.rb doubleclick
+amiblocked google
+amiblocked doubleclick
 ```
