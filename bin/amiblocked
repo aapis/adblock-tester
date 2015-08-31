@@ -7,16 +7,14 @@ require 'notifaction'
 require_relative '../lib/amiblocked'
 
 # default configuration options
-config = { 
-  url: "https://easylist.adblockplus.org/en/",
+config = {
+  url: 'https://easylist.adblockplus.org/en/',
   service: ARGV[0]
 }
 
 # use local configuration options if they exist
 local_config = File.expand_path('~') + '.amiblocked-config.json'
 
-if File.exists?(local_config)
-  config = JSON.parse(local_config)
-end
+config = JSON.parse(local_config) if File.exist?(local_config)
 
 AmIBlocked.new(config)
